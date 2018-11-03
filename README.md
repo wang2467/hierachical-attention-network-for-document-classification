@@ -1,17 +1,17 @@
 # hierachical-attention-network-for-document-classification
 Useful files:
     han.py -- HATT model
-    <hr>
+    <br>
     train.py -- training script
-    <hr>
+    <br>
     test.py -- testing script
-    <hr>
+    <br>
     minibatch.py -- minibatch iterator
-    <hr>
+    <br>
     preprocess.py -- build dictionary and encode data
-    <hr>
+    <br>
     word2vec_gensim.py -- train word2vec model to initialize embedding matrix in HATT
-    <hr>
-    <hr>
+    <br>
+    <br>
     
 Tested with IMDB dataset with 25000 training samples and testing samples. Got accuracy of approximately 43% on test set.
