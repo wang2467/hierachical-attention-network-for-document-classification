@@ -4,7 +4,7 @@ import tensorflow as tf
 import os
 
 def main():
-	bf = BatchFeeder('test', 64, 50, 100)
+	bf = BatchFeeder('test', 64, 15, 50)
 	
 	print(len(bf.vocab_encode_dict.keys()))
 	
@@ -25,6 +25,7 @@ def main():
 		if ckpt and ckpt.model_checkpoint_path:
 			saver.restore(sess, ckpt.model_checkpoint_path)
 		
+		print(tf.global_variables)
 		total_accuracy = 0
 		total_count = 0
 		for encoded_data, document_length_mask, sentence_length_mask, labels in bf:
